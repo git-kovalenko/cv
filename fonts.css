@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: bicubik;
+    src: url('fonts/bicubik_central_europe.eot');
+    src: url('fonts/bicubik_central_europe.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bicubik_central_europe.woff') format('woff'),
+         url('fonts/bicubik_central_europe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: furoreregular;
+    src: url('fonts/furore.eot');
+    src: url('fonts/furore.eot?#iefix') format('embedded-opentype'),
+         url('fonts/furore.woff') format('woff'),
+         url('fonts/furore.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Marmelad;
+    src: url('fonts/marmelad-regular.eot');
+    src: url('fonts/marmelad-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/marmelad-regular.woff') format('woff'),
+         url('fonts/marmelad-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
