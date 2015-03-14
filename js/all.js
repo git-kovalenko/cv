@@ -1,8 +1,14 @@
+window.onload = function(){
+	content_min_height();
+}
+window.onresize = function(){
+	content_min_height();
+}
 
-		var proportion = 1000/16;
-		function resizeFont() 
-			{document.body.style.fontSize = parseInt(document.body.offsetWidth/proportion) + 'px' 
-			}
-		onload = onresize = resizeFont;
-		if (document.addEventListener) document.addEventListener("DOMContentLoaded", resizeFont, null);
-
+function content_min_height(){
+	if ($(".content").outerHeight() < $(".wrapper").outerHeight()){
+		var content_min_height = $(".wrapper").outerHeight() - $(".header").outerHeight();
+		$(".content").css({height: content_min_height+'px'});
+		$(".left-sidebar").css({height: content_min_height+'px'});
+	}
+}
