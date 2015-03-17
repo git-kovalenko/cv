@@ -1,7 +1,12 @@
-.sprite { background: url('images/sprite.png') no-repeat top left; width: 44px; height: 44px;  } 
+.sprite { background: url('images/sprite.png') no-repeat top left; 
+	width: 44px; 
+	height: 44px;  
+}
 .sprite.github1 { background-position: 0 0; } 
 .sprite.github2 { background-position: -49px 0; } 
 .sprite.googleplus { background-position: -98px 0; } 
 .sprite.linkedin { background-position: -147px 0; } 
 .sprite.mail { background-position: -196px 0; } 
 .sprite.skype { background-position: -245px 0; } 
+
+.sprite.github1:hover { background-position: -49px 0; } 
