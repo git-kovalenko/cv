@@ -1,4 +1,4 @@
-window.onload = function(){
+﻿window.onload = function(){
 	content_min_height();
 	
 	setup();
@@ -20,22 +20,20 @@ function content_min_height(){
 }
 
 function setup(){
-	$('.lang_selector li:nth-child(2)').click(function(){
-		
-		
-		$.post( "portfolio.php", {portfolio_en: "1"}) 
-		.success(function( data ) {
-			alert(data);
-			
-			$(".content *").remove() ;
-			/*
-			var arr = data.split("***");
-			var arrLength = arr.length-1;
-			for (var i = 0; i < arrLength; i++) {
-				var val = arr[i].trim();
-				$('#drop_dep').append("<option class='dropopt' value="+ val +">"+ val +"</option>");
-			}*/
-		});
+	$('.lang_selector li:nth-child(1)').click(function(){
+		$.post( "portfolio.php", {portfolio_ru: "1"}) 
+		.success( function( data ){
+			$(".content *").remove();
+			$(".content").html(data);
 
+		});
+	}); 
+	$('.lang_selector li:nth-child(2)').click(function(){
+		$.post( "portfolio.php", {portfolio_en: "1"}) 
+		.success( function( data ){
+			$(".content *").remove();
+			$(".content").html(data);
+
+		});
 	}); 
 };

@@ -1,26 +1,31 @@
-<?php			
+п»ї<?php			
 	date_default_timezone_set('Europe/Kiev');
+
+	set_var();
+
 
 	switch (true) {
 		case (!empty($_POST['portfolio_ru'])):
 			echo $portfolio_ru;
 			break;
 		case (!empty($_POST['portfolio_en'])):
-			echo $portfolio_en;
+			echo " ".$portfolio_en." ";
 			break;
 		
 			
-		default: // действие по умолчанию
+		default: // РґРµР№СЃС‚РІРёРµ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	}
-
-	$portfolio_ru = "
+	
+	function set_var(){
+		global $portfolio_ru;
+		$portfolio_ru = "
 			<div class='project'>
 				<p><img class='screen_shot' src='images/bonfire.jpg' alt='screen shot'>
 				<span class='project_name'>Bonfire</span>
-					Страница сверстана по <a href='images/eCommerce-Website-PSD.rar'>.PSD</a> макету. 
-					Адаптивная по ширине от 600 до 940 px. Добавлен скрипт для слайдеров.
-					<br><br><a href='projects\web-page-bonfire\bonfire.html'>Ссылка на страницу</a>.
-					<br>Репозиторий:<a class='git_link' href='https://github.com/git-kovalenko/web-page-bonfire/'>github.com/git-kovalenko/web-page-bonfire/</a>
+					РЎС‚СЂР°РЅРёС†Р° СЃРІРµСЂСЃС‚Р°РЅР° РїРѕ <a href='images/eCommerce-Website-PSD.rar'>.PSD</a> РјР°РєРµС‚Сѓ. 
+					РђРґР°РїС‚РёРІРЅР°СЏ РїРѕ С€РёСЂРёРЅРµ РѕС‚ 600 РґРѕ 940 px. Р”РѕР±Р°РІР»РµРЅ СЃРєСЂРёРїС‚ РґР»СЏ СЃР»Р°Р№РґРµСЂРѕРІ.
+					<br><br><a href='projects\web-page-bonfire\bonfire.html'>РЎСЃС‹Р»РєР° РЅР° СЃС‚СЂР°РЅРёС†Сѓ</a>.
+					<br>Р РµРїРѕР·РёС‚РѕСЂРёР№:<a class='git_link' href='https://github.com/git-kovalenko/web-page-bonfire/'>github.com/git-kovalenko/web-page-bonfire/</a>
 				</p>
 				<ul class='used_technology'>
 					<li>Html5/CSS3</li><li>JS/Jquery</li>
@@ -28,12 +33,12 @@
 			</div>
 			<div class='project'>
 				<p><img class='screen_shot' src='images/id_reader_icon.jpg' alt='screen shot'>
-				<span class='project_name'>База данных спецодежды ID Reader</span>
-					Проект разработан для учета оборота спецодежды между подрядчиком и заказчиком. Веб интерфейс работает со 
-					сканером штрих-кодов, автоматически связываясь с базой данных MySQL на сервере. Реализовано разграничение прав пользователей,
-					учтены все требования заказчика по взаимодействию пользователей с базой данных, в том числе импорт в базу данных из .txt файла, 
-					а также выборка по параметрам с генерацией отчета в формате файла Excel. Подробнее: <a href='http://koh.3d-foto.in.ua/help'>Справка по работе с базой данных ID Reader</a>					
-					<br><br><a href='http://koh.3d-foto.in.ua'>Демонстрационная страница проекта.</a>
+				<span class='project_name'>Р‘Р°Р·Р° РґР°РЅРЅС‹С… СЃРїРµС†РѕРґРµР¶РґС‹ ID Reader</span>
+					РџСЂРѕРµРєС‚ СЂР°Р·СЂР°Р±РѕС‚Р°РЅ РґР»СЏ СѓС‡РµС‚Р° РѕР±РѕСЂРѕС‚Р° СЃРїРµС†РѕРґРµР¶РґС‹ РјРµР¶РґСѓ РїРѕРґСЂСЏРґС‡РёРєРѕРј Рё Р·Р°РєР°Р·С‡РёРєРѕРј. Р’РµР± РёРЅС‚РµСЂС„РµР№СЃ СЂР°Р±РѕС‚Р°РµС‚ СЃРѕ 
+					СЃРєР°РЅРµСЂРѕРј С€С‚СЂРёС…-РєРѕРґРѕРІ, Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё СЃРІСЏР·С‹РІР°СЏСЃСЊ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С… MySQL РЅР° СЃРµСЂРІРµСЂРµ. Р РµР°Р»РёР·РѕРІР°РЅРѕ СЂР°Р·РіСЂР°РЅРёС‡РµРЅРёРµ РїСЂР°РІ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№,
+					СѓС‡С‚РµРЅС‹ РІСЃРµ С‚СЂРµР±РѕРІР°РЅРёСЏ Р·Р°РєР°Р·С‡РёРєР° РїРѕ РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёСЋ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С…, РІ С‚РѕРј С‡РёСЃР»Рµ РёРјРїРѕСЂС‚ РІ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… РёР· .txt С„Р°Р№Р»Р°, 
+					Р° С‚Р°РєР¶Рµ РІС‹Р±РѕСЂРєР° РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј СЃ РіРµРЅРµСЂР°С†РёРµР№ РѕС‚С‡РµС‚Р° РІ С„РѕСЂРјР°С‚Рµ С„Р°Р№Р»Р° Excel. РџРѕРґСЂРѕР±РЅРµРµ: <a href='http://koh.3d-foto.in.ua/help'>РЎРїСЂР°РІРєР° РїРѕ СЂР°Р±РѕС‚Рµ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С… ID Reader</a>					
+					<br><br><a href='http://koh.3d-foto.in.ua'>Р”РµРјРѕРЅСЃС‚СЂР°С†РёРѕРЅРЅР°СЏ СЃС‚СЂР°РЅРёС†Р° РїСЂРѕРµРєС‚Р°.</a>
 					
 				</p>
 				<ul class='used_technology'>
@@ -42,18 +47,21 @@
 			</div>
 			<div class='project'>
 				<p><img class='screen_shot' src='images/sphere.jpg' alt='screen shot'>
-				<span class='project_name'>Ход лучей в интегрирующей сфере</span>
-					В проекте реализовано 2-мерное моделирование лучей светодиода внутри сферы, покрытой изнутри светорассеивающим материалом. 
-					Сфера имеет перегородку, размер и положение которой можно изменять мышью. Для отрисовки сферы использован &lt;canvas&gt;, график освещенности выводится 
-					с помощью JS библиотеки <a href='http://amcharts.com'>AmCharts</a> или <a href='https://developers.google.com/chart/'>Google Charts</a>.
-					<br><br>Страница проекта <a href='http://sphere.3d-foto.in.ua'>sphere.3d-foto.in.ua</a>
+				<span class='project_name'>РҐРѕРґ Р»СѓС‡РµР№ РІ РёРЅС‚РµРіСЂРёСЂСѓСЋС‰РµР№ СЃС„РµСЂРµ</span>
+					Р’ РїСЂРѕРµРєС‚Рµ СЂРµР°Р»РёР·РѕРІР°РЅРѕ 2-РјРµСЂРЅРѕРµ РјРѕРґРµР»РёСЂРѕРІР°РЅРёРµ Р»СѓС‡РµР№ СЃРІРµС‚РѕРґРёРѕРґР° РІРЅСѓС‚СЂРё СЃС„РµСЂС‹, РїРѕРєСЂС‹С‚РѕР№ РёР·РЅСѓС‚СЂРё СЃРІРµС‚РѕСЂР°СЃСЃРµРёРІР°СЋС‰РёРј РјР°С‚РµСЂРёР°Р»РѕРј. 
+					РЎС„РµСЂР° РёРјРµРµС‚ РїРµСЂРµРіРѕСЂРѕРґРєСѓ, СЂР°Р·РјРµСЂ Рё РїРѕР»РѕР¶РµРЅРёРµ РєРѕС‚РѕСЂРѕР№ РјРѕР¶РЅРѕ РёР·РјРµРЅСЏС‚СЊ РјС‹С€СЊСЋ. Р”Р»СЏ РѕС‚СЂРёСЃРѕРІРєРё СЃС„РµСЂС‹ РёСЃРїРѕР»СЊР·РѕРІР°РЅ &lt;canvas&gt;, РіСЂР°С„РёРє РѕСЃРІРµС‰РµРЅРЅРѕСЃС‚Рё РІС‹РІРѕРґРёС‚СЃСЏ 
+					СЃ РїРѕРјРѕС‰СЊСЋ JS Р±РёР±Р»РёРѕС‚РµРєРё <a href='http://amcharts.com'>AmCharts</a> РёР»Рё <a href='https://developers.google.com/chart/'>Google Charts</a>.
+					<br><br>РЎС‚СЂР°РЅРёС†Р° РїСЂРѕРµРєС‚Р° <a href='http://sphere.3d-foto.in.ua'>sphere.3d-foto.in.ua</a>
 					
-					<br>Репозиторий:<a class='git_link' href='https://github.com/git-kovalenko/sphere/'>github.com/git-kovalenko/sphere/</a>
+					<br>Р РµРїРѕР·РёС‚РѕСЂРёР№:<a class='git_link' href='https://github.com/git-kovalenko/sphere/'>github.com/git-kovalenko/sphere/</a>
 				</p>
 				<ul class='used_technology'>
 					<li>Html5/CSS3</li><li>JS/Jquery</li><li>AmCharts</li><li>Google Charts</li>
 				</ul>
 			</div>
-	";	
-	$portfolio_en = "ENENENENENENNENENENEN";
+		";	
+		
+		global $portfolio_en;
+		$portfolio_en = "ENENENEN";
+	}
 ?>
