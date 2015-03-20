@@ -1,5 +1,7 @@
 window.onload = function(){
 	content_min_height();
+	
+	setup();
 }
 window.onresize = function(){
 	content_min_height();
@@ -16,3 +18,24 @@ function content_min_height(){
 		$(".left-sidebar").outerHeight(content_min_height);
 	}
 }
+
+function setup(){
+	$('.lang_selector li:nth-child(2)').click(function(){
+		
+		
+		$.post( "portfolio.php", {portfolio_en: "1"}) 
+		.success(function( data ) {
+			alert(data);
+			
+			$(".content *").remove() ;
+			/*
+			var arr = data.split("***");
+			var arrLength = arr.length-1;
+			for (var i = 0; i < arrLength; i++) {
+				var val = arr[i].trim();
+				$('#drop_dep').append("<option class='dropopt' value="+ val +">"+ val +"</option>");
+			}*/
+		});
+
+	}); 
+};

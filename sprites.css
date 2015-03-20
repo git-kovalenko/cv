@@ -9,4 +9,6 @@
 .sprite.mail { background-position: -196px 0; } 
 .sprite.skype { background-position: -245px 0; } 
 
-.sprite.github1:hover { background-position: -49px 0; } 
+.sprite.github1:hover { 
+	background-position: -49px 0;
+ } 
