@@ -1,4 +1,4 @@
-* {
+ * {
 	margin: 0;
 	padding: 0;
 }
@@ -16,8 +16,9 @@ body {
 	background: lightgray;
 }
 .wrapper {
-	min-height: 100%;
+	min-height: calc(100% - 50px);
 	background: #fff;
+	padding-bottom: 10px;
 }
 
 
@@ -34,7 +35,7 @@ body {
 
 .portrait {
 	display: flex;
-	align-items: center;	
+	align-items: center;	 
 	margin: 5px 1% 5px 1%;
 	
 	
@@ -45,6 +46,7 @@ body {
 	text-shadow: 2px 2px 3px black;
 }
 .portrait img{
+	flex: none;
 	width: 6em;
 	border: 1px solid black;
 	border-radius: 30%;
@@ -83,6 +85,7 @@ h3{
 .navigation{
 	list-style: none;
 	align-self: flex-end;
+	flex: none;
 }
 .navigation li{
 	display: inline-block;
@@ -102,19 +105,17 @@ h3{
 	vertical-align: middle;
 }
 .navigation li:hover{
-	margin-bottom: -10px;
-	height: 35px;
 	cursor: pointer;
+	text-shadow: -1px -1px 1px #000;
 }
 
 /* Content
 -----------------------------------------------------------------------------*/
 main {
 	width: 75%;
-	margin-left: 25%;
-	margin-top: 10px;
+	min-height: 300px;
+	margin: 10px 0 0 25%;
 	padding: 5px 0;
-	min-height: 100%;
 	box-shadow: -5px 0px 5px 5px #FFD773;
 	box-sizing: border-box;
 }
@@ -166,7 +167,7 @@ main {
 	display: block;
 	float: left;
 	width: 25%;
-	min-height: 100%;
+	min-height: 70%;
 }
 
 .sidebar_menu {
@@ -181,21 +182,21 @@ main {
 	height: 30px;
 	line-height: 30px;
 	overflow: hidden;
-	
-}
-.sidebar_menu li:hover{
-	margin-left: 5px;
-	margin-right: 0;
-	cursor: pointer;
-}
-
-.sidebar_menu li p{
-	display: inline-block;
 	text-shadow: -1px -1px 1px  #000;
 	color: white;
+}
+.sidebar_menu li:hover{
+	cursor: pointer;
+	color: black;
+	text-shadow: -1px -1px 1px yellow;
+}
+
+.sidebar_menu li span{
+	display: inline-block;
 	font: 0.9em bicubik;	
-	margin: 0 10px 0 10%;
+	margin-left: 10%;
 	vertical-align: middle;
+	
 }
 
 .sidebar_menu li:before{
@@ -214,7 +215,15 @@ main {
 	margin-top: 50px;	
 }
 .social_icons li{
-margin-top: 5px;	
+	margin-top: 5px;	
+	overflow: hidden;
+}
+.social_icons li:hover{
+	margin-left: 3px;
+}
+.social_icons li a{
+	display: block;
+	height: 100%;
 }
 
 
@@ -222,11 +231,12 @@ margin-top: 5px;
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
+	height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: #BFF08E;
-	box-sizing: border-box;
-	border: 1px solid green;
 	width: 100%;
+	
+	
 }

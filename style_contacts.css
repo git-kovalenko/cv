@@ -1,0 +1,18 @@
+h4{
+	font-size: 18px;
+}
+.contacts{
+	margin: 0 10px;
+}
+.contacts > ul{
+	margin: 5px 0 0 10px;
+	list-style: none;
+}
+
+
+.contacts > h4{
+	margin-top: 10px;
+}
+.contacts > p{
+	margin: 5px 0 0 10px;
+}
