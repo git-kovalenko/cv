@@ -7,7 +7,7 @@ html{
 	height: 1px;
 }
 body {
-	font: normal 16px Consolas, Tahoma, Verdana, Arial, sans-serif;
+	font: normal 17px Consolas, Tahoma, Verdana, Arial, sans-serif;
 	margin: 0 auto;
 	min-height: 100%;
 	height: 1px;
@@ -47,21 +47,21 @@ body {
 }
 .portrait img{
 	flex: none;
-	width: 6em;
+	width: 4em;
 	border: 1px solid black;
 	border-radius: 30%;
 	box-shadow: 0 0 5px 1px #bcff72;
 }
 h1{
-	font: 1.2em Marmelad;
+	font: 1.1em Marmelad;
 	text-transform: uppercase;
 }
 h2{
-	font: 1em bicubik;
+	font: 0.9em bicubik;
 }
 h3{
 	
-	font: 0.8em furoreregular;
+	font: 0.7em furoreregular;
 }
 
 .lang_selector{
@@ -187,8 +187,8 @@ main {
 }
 .sidebar_menu li:hover{
 	cursor: pointer;
-	color: black;
-	text-shadow: -1px -1px 1px yellow;
+	text-shadow: 1px 1px 1px #000;
+	margin-left: 2px;
 }
 
 .sidebar_menu li span{

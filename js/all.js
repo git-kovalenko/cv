@@ -73,16 +73,20 @@ function setup(){
 };
 
 function load_page(language, file_name){
+	document.body.style.cursor = "wait";
 	$.post( file_name, {user_lang: language})  
 	.success( function( data ){
 		var data = JSON.parse(data);
 		$(".content").html(data.main);
 		$.cookie('file_name', file_name);
+		document.body.style.cursor = "default";
 	});
 
 	load_common_parts(language);
+	
 }
 function load_common_parts(language){
+	document.body.style.cursor = "wait";
 	$.post( "common_page.php", {user_lang: language})  
 	.success( function( data ){
 		var data = JSON.parse(data);
@@ -106,5 +110,6 @@ function load_common_parts(language){
 		$(".sidebar_menu li").each(function(index){
 			this.style.cssText = style_li.shift();
 		});
+		document.body.style.cursor = "default";
 	});
 }

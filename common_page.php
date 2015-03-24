@@ -18,8 +18,8 @@
 			<div class='portrait'>
 				<img src='images/foto.jpg' alt='foto'>
 				<div>
-					<h1>Трутуту<br> 
-						туту
+					<h1>Коваленко<br> 
+						Анатолий
 					</h1>
 					<h3>Фронт-енд разработчик</h3>
 				</div>
@@ -48,8 +48,8 @@
 			<div class='portrait'>
 				<img src='images/foto.jpg' alt='foto'>
 				<div>
-					<h1>Blablabla<br> 
-						bla
+					<h1>Kovalenko<br> 
+						Anatoliy
 					</h1>
 					<h3>Front-end developer</h3>
 				</div>

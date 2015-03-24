@@ -31,13 +31,13 @@
 		
 	}	
 	function send_contacts_en(){
-		$main =  "ENENENENENEN
+		$main =  "
 			<div class= 'contacts'>
-				<h2>Контактная информация</h2>
+				<h2>Contact information</h2>
 				<ul>
 					<li>a.kovalenko@ukr.net
-					<li>тел. 097 717 15 47
-					<li>г. Киев, ул. Регенераторная, 4.
+					<li>tel. 097 717 15 47
+					<li>Str. Regeneratorna, 4, Kyiv, Ukraine.
 					<li>skype: kovalenko.84
 				</ul>
 				

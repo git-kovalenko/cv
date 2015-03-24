@@ -17,4 +17,5 @@ h4{
 .termin {
 	font-weight: 600;
 	font-style: oblique;
+	background: linear-gradient(to top, skyblue, #fff);;
 }
